@@ -1,0 +1,12 @@
+h1{
+  color: blue;
+}
+
+footer{
+  border: 1px solid pink;
+  text-align: center;
+}
+
+footer a {
+  color: red;
+}

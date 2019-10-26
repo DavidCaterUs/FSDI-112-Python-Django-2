@@ -1,0 +1,26 @@
+!-- extend/include the layout  -->
+
+{% extends "views/layout.html" %}
+
+<!-- render content inside specific blocks  -->
+{% block styles %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/catalog.css'%}">
+
+{% endblock %}
+
+{% block content %}
+
+<ul class="cat-container">
+  
+</ul>
+
+{% endblock %}
+
+{% block scripts %}
+
+<script src="{% static 'scripts/catalog.js'%}"></script>
+
+
+{% endblock %}

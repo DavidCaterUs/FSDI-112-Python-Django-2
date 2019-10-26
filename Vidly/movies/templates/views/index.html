@@ -1,0 +1,20 @@
+<!-- extend/include the layout  -->
+
+{% extends "views/layout.html" %}
+
+<!-- render content inside specific blocks  -->
+{% block content %}
+<h1>Welcome to Vidly store</h1>
+
+<h3>{{title}}</h3>
+<h4>Genre on the system:</h4>
+<ul>
+  {% for genre in items %}
+  <li>[{{genre.id}}]{{genre.name}}</li>
+  {% endfor %}
+</ul>
+
+
+
+
+{% endblock %}
